@@ -1,4 +1,5 @@
 # TO-DO: complete the helper function below to merge 2 sorted arrays
+""" My way """
 def merge(left, right):
     # elements = len(arrA) + len(arrB)
     # merged_arr = [0] * elements
@@ -19,6 +20,31 @@ def merge(left, right):
     merged_arr.extend(left[left_pointer:])
     merged_arr.extend(right[right_pointer:])
     return merged_arr
+
+
+""" Lambda way """
+# def merge(arrA, arrB):
+#     elements = len(arrA) + len(arrB)
+#     merged_arr = [0] * elements
+
+#     # Your code here
+#     while len(arrA) is not 0 and len(arrB) is not 0:
+#         if arrA[0] < arrB[0]:
+#             del merged_arr[0]
+#             merged_arr.append(arrA[0])
+#             arrA.remove(arrA[0])
+            
+#         else:
+#             del merged_arr[0]
+#             merged_arr.append(arrB[0])
+#             arrB.remove(arrB[0])
+
+#     if len(arrA) == 0:
+#         merged_arr += arrB
+#     else:
+#         merged_arr += arrA
+
+#     return merged_arr
 
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
